@@ -34,6 +34,12 @@
     #seccion_4{
       background: lightsteelblue;
     }
+    #seccion_5{
+      background: lightpink;
+    }
+    #seccion_6{
+      background: lightseagreen;
+    }
 
 
   </style>
@@ -62,15 +68,74 @@
 <body>      
   <nav>
     <input type="button" value="Home" onclick="cambiarSeccion(1);">
-    <input type="button" value="Contacto" onclick="cambiarSeccion(2);">
-    <input type="button" value="Acerca de" onclick="cambiarSeccion(3);">
-    <input type="button" value="Login" onclick="cambiarSeccion(4);">
   </nav> 
 
-  <section class="seccion ocultar" id="seccion_1"></section>
-  <section class="seccion" id="seccion_2"></section>
-  <section class="seccion ocultar" id="seccion_3"></section>
-  <section class="seccion ocultar" id="seccion_4"></section>
+  <section class="seccion" id="seccion_1">
+    <html>
+      <head>
+          <h1>SPORTION</h1>
+      </head>
+      <body>
+        <nav>
+          <input type="button" value="Reserva" onclick="cambiarSeccion(2);">
+          <input type="button" value="Comparte" onclick="cambiarSeccion(4);">
+          <input type="button" value="Mis reservas" onclick="cambiarSeccion(6);">
+          <input type="button" value="Salir" onclick="cambiarSeccion(1);">
+        </nav>
+      </body>
+    </html>
+  </section>
+  <section class="seccion" id="seccion_2">
+     <html>
+      <head>
+          <h1>FORMULARIO RESERVA</h1>
+      </head>
+      <body>
+        <p>Nombre:</p>
+        <p>Id:</p>
+        <p>Fecha:</p>
+        <p>Hora:</p>
+        <p>Barrio:</p>
+        <p>Tipo Deporte:</p>
+        <p>Numero de jugadores:</p>
+      </body>
+      <nav>
+         <input type="button" value="Siguiente" onclick="cambiarSeccion(3);">
+      </nav>
+    </html>
+  </section>
+  <section class="seccion" id="seccion_3">
+    <html>
+      <head>
+          <h1>MAPA</h1>
+      </head>
+      <body></body>
+    </html>
+  </section>
+  <section class="seccion" id="seccion_4">
+    <html>
+      <head>
+          <h1>FORMULARIO COMPARTE</h1>
+      </head>
+      <body></body>
+    </html>
+  </section>
+  <section class="seccion" id="seccion_5">
+    <html>
+      <head>
+          <h1>LISTA CANCHAS DISPONIBLES</h1>
+      </head>
+      <body></body>
+    </html>
+  </section>
+  <section class="seccion" id="seccion_6">
+    <html>
+      <head>
+          <h1>MIS RESERVAS</h1>
+      </head>
+      <body></body>
+    </html>
+  </section>
 
 </body>
 
