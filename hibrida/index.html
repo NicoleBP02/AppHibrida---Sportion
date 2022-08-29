@@ -1,41 +1,32 @@
 <!-- https://codepen.io/xaca/pen/yLNyNyy -->
 <!-- xacarana.com/cursos/html_y_css -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/vendor/animate.min.css"/>
   <link rel="stylesheet" href="css/main.css">
-  <title></title>
   <script src="js/main.js"></script>
+  <title>Sportion</title>
 </head>
 
 <body>
+
   <section id="aplicacion">
+
+
     <section class="animate__animated seccion" id="seccion_1">
-      <html>
-        <head>
-            <h1>SPORTION</h1>
-        </head>
-        <body>
-          <nav>
+          <h1>SPORTION</h1>
             <input type="button" value="Reserva" onclick="cambiarSeccion(2);">
             <input type="button" value="Comparte" onclick="cambiarSeccion(4);">
             <input type="button" value="Mis reservas" onclick="cambiarSeccion(6);">
             <input type="button" value="Salir" onclick="cambiarSeccion(1);">
-          </nav>
-        </body>
-      </html>
     </section>
+
     <section class="animate__animated seccion ocultar" id="seccion_2">
-       <html>
-        <head>
-            <h1>FORMULARIO RESERVA</h1>
-        </head>
-        <body>
+          <h1>FORMULARIO RESERVA</h1>
           <p>Nombre:</p>
           <p>Id:</p>
           <p>Fecha:</p>
@@ -43,33 +34,20 @@
           <p>Barrio:</p>
           <p>Tipo Deporte:</p>
           <p>Numero de jugadores:</p>
-        </body>
-        <nav>
            <input type="button" value="Siguiente" onclick="cambiarSeccion(3);">
-        </nav>
-      </html>
     </section>
+
     <section class="animate__animated seccion ocultar" id="seccion_3">
-      <html>
-        <head>
-            <h1>MAPA</h1>
-        </head>
-        <body>
+          <h1>MAPA</h1>
           <img src="mapa.png" width="370" height="200">
           <p> Canchas Disponibles:</p>
           <p>1. ----------</p>
           <p>2. ----------</p>
-        </body>
-        <nav>
-           <input type="button" value="Completar" onclick="cambiarSeccion(6);">
-        </nav>
-      </html>
+          <input type="button" value="Completar" onclick="cambiarSeccion(6);">
     </section>
+
     <section class="animate__animated seccion ocultar" id="seccion_4">
-      <html>
-        <head>
-            <h1>FORMULARIO COMPARTE</h1>
-        </head>
+        <h1>FORMULARIO COMPARTE</h1>
         <body>
           <p>Nombre:</p>
           <p>Id:</p>
@@ -78,35 +56,21 @@
           <p>Barrio:</p>
           <p>Tipo Deporte:</p>
           <p>Numero de jugadores:</p>
-        </body>
-        <nav>
            <input type="button" value="Siguiente" onclick="cambiarSeccion(5);">
-        </nav>
-      </html>
     </section>
+
     <section class="animate__animated seccion ocultar" id="seccion_5">
-      <html>
-        <head>
-            <h1>LISTA CANCHAS DISPONIBLES</h1>
-        </head>
-        <body>
+          <h1>LISTA CANCHAS DISPONIBLES</h1>
           <p> Canchas ..................... Cupos</p>
           <p>1.______________ ........  0</p>
           <p>2.______________ ......... 0</p>
           <p>3.______________ ......... 0</p>
           <p>4.______________ ......... 0</p>
-        </body>
-        <nav>
            <input type="button" value="Completar" onclick="cambiarSeccion(6);">
-        </nav>
-      </html>
     </section>
+
     <section class="animate__animated seccion ocultar" id="seccion_6">
-      <html>
-        <head>
-            <h1>MIS RESERVAS</h1>
-        </head>
-        <body>
+          <h1>MIS RESERVAS</h1>
           <p> ACTIVAS </p>
           <p>1.______________  00:00</p>
           <p>2.______________  00:00</p>
@@ -115,12 +79,10 @@
           <p>2.______________  00:00</p>
           <p>3.______________  00:00</p>
           <p>4.______________  00:00</p>
-        </body>
-        <nav>
            <input type="button" value="Inicio" onclick="cambiarSeccion(1);">
-        </nav>
-      </html>
     </section>
+
+
   </section>  
   
 
