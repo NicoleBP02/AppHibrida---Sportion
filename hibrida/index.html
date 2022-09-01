@@ -16,13 +16,25 @@
 
   <section id="aplicacion">
 
+    <section class="animate__animated seccion" id="seccion_7">
+      <h1>SPORTION</h1>
+      <div>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario"> <br>
+        </div>
 
-    <section class="animate__animated seccion" id="seccion_1">
+        <div>
+        <input type="password" name="password" id="password" placeholder="Contraseña"> <br>
+        </div>
+
+        <input type="button" value="Entrar" onclick="cambiarSeccion(1);">
+    </section>
+
+    <section class="animate__animated seccion ocultar" id="seccion_1">
           <h1>SPORTION</h1>
             <input type="button" value="Reserva" onclick="cambiarSeccion(2);">
             <input type="button" value="Comparte" onclick="cambiarSeccion(4);">
             <input type="button" value="Mis reservas" onclick="cambiarSeccion(6);">
-            <input type="button" value="Salir" onclick="cambiarSeccion(1);">
+            <input type="button" value="Salir" onclick="cambiarSeccion(7);">
     </section>
 
     <section class="animate__animated seccion ocultar" id="seccion_2">
