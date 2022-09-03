@@ -8,8 +8,9 @@ const uglify = require('gulp-uglify-es').default;
 sass.compiler = require('dart-sass');
 
 function js(){
-  return src("./js/**/*.js")
+  return src("./js/*.js")
          .pipe(concat("main.min.js"))
+         .pipe(uglify())
          .pipe(dest('./js'));
 }
 
