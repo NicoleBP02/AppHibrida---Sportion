@@ -9,8 +9,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dart-sass": "^1.25.0",
     "grunt": "^1.5.3",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0"
   },
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -100,6 +105,7 @@
     "resolve-dir": "^1.0.1",
     "rimraf": "^3.0.2",
     "safer-buffer": "^2.1.2",
+    "sass": "^1.54.8",
     "sprintf-js": "^1.0.3",
     "supports-color": "^7.2.0",
     "supports-preserve-symlinks-flag": "^1.0.0",

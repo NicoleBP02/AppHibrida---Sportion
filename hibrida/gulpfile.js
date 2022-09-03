@@ -1,6 +1,14 @@
-function defaultTask(cb) {
-    // place code for your default task here
-    cb();
+const {src, dest} = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const rename = require('gulp-rename');
+const cleanCSS = require('gulp-clean-css');
+function css() {
+    return src("./sass/*.sass")
+    .pipe(sass())
+    .pipe(cleanCSS())
+    .pipe(rename('main.min.css'))
+    .pipe(dest("./css"));
+
   }
-  
-  exports.default = defaultTask
+  exports.css = css;
+  exports.default = ()=>{}; //función anónima
