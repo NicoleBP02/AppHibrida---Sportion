@@ -22,12 +22,19 @@ function cambiarSeccion(id)
 }
 
 function login(){
-  let usuario = document.getElementById('usuario').value;
-  let password = document.getElementById('password').value;
+  let usuario = document.getElementById('usuario');
+  let password = document.getElementById('password');
 
-  if (usuario == localStorage.getItem('usuario') && password == localStorage.getItem('password')){
-    console.log("SAMEEE")
+  if (usuario.value == localStorage.getItem('usuario') && password.value == localStorage.getItem('password')){
+    console.log("Successful login")
+    usuario.value = "";
+    password.value = "";
     cambiarSeccion(1);
+  }
+  else{
+    console.log("Error on login - Wrong username/password")
+    usuario.style.background = "#ff000011"
+    password.style.background = "#ff000011"
   }
   
   
