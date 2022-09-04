@@ -16,15 +16,19 @@ body {
 .seccion {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .seccion h1 {
-  background-color: #666666;
+  margin: 0;
+  padding: 40px;
+  width: 100%;
   text-align: center;
   font-family: Helvetica, sans-serif;
   color: white;
-  margin: 0;
-  padding: 40px;
+  background-color: #666666;
 }
 
 .ocultar {
