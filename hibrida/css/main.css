@@ -108,7 +108,19 @@ body {
 }
 
 /* SECCION 5 */
+#seccion_5 input {
+  height: 40px;
+  width: 50%;
+  margin: 10px auto;
+}
+
 /* SECCION 6 */
+#seccion_6 input {
+  height: 40px;
+  width: 50%;
+  margin: 10px auto;
+}
+
 /* SECCION 7 */
 #seccion_7 {
   display: flex;
