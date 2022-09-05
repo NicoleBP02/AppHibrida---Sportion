@@ -25,17 +25,27 @@ function login(){
   let usuario = document.getElementById('usuario');
   let password = document.getElementById('password');
 
+  cambiarSeccion(1);
   if (usuario.value == localStorage.getItem('usuario') && password.value == localStorage.getItem('password')){
     console.log("Successful login")
     usuario.value = "";
     password.value = "";
-    cambiarSeccion(1);
   }
   else{
     console.log("Error on login - Wrong username/password")
     usuario.style.background = "#ff000011"
     password.style.background = "#ff000011"
-  }
-  
-  
+  } 
+}
+
+function reservar(){
+  console.log("Launching reservar function...");
+  let seleccion = document.querySelector('input[name="reservar"]:checked');
+  console.log("You selected " + seleccion.value);
+  localStorage.setItem('reservas', seleccion.value);
+  let listareservas = document.getElementById('listareservas');
+  let newreserva = document.createElement('p')
+  newreserva.value = localStorage.getItem('reservas')
+  listareservas.appendChild(newreserva)
+  cambiarSeccion(6);
 }

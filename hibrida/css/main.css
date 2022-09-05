@@ -84,6 +84,15 @@ body {
 }
 
 /* SECCION 3 */
+#seccion_3 div {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: center;
+  height: 40px;
+}
+
 /* SECCION 4 */
 #seccion_4 {
   display: flex;
@@ -170,3 +179,5 @@ body {
   color: white;
   border-radius: 4px;
 }
+
+/*# sourceMappingURL=main.css.map */
