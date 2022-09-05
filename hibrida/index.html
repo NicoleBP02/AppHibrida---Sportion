@@ -19,50 +19,50 @@
     <section class="animate__animated seccion" id="seccion_7">
       <h1>SPORTION</h1>
       <div>
-        <input type="text" name="usuario" id="usuario" placeholder="Usuario"> <br>
+        <input class="datosLogin" type="text" name="usuario" id="usuario" placeholder="Usuario"> <br>
         </div>
 
         <div>
-        <input type="password" name="password" id="password" placeholder="Contraseña"> <br>
+        <input class="datosLogin" type="password" name="password" id="password" placeholder="Contraseña"> <br>
         </div>
 
-        <input type="button" value="Entrar" onclick="login()">
+        <input class="boton" type="button" value="Entrar" onclick="login()">
     </section>
 
     <section class="animate__animated seccion ocultar" id="seccion_1">
           <h1>SPORTION</h1>
-            <input type="button" value="Reserva" onclick="cambiarSeccion(2);">
-            <input type="button" value="Comparte" onclick="cambiarSeccion(4);">
-            <input type="button" value="Mis reservas" onclick="cambiarSeccion(6);">
-            <input type="button" value="Salir" onclick="cambiarSeccion(7);">
+            <input class="boton" type="button" value="Reserva" onclick="cambiarSeccion(2);">
+            <input class="boton" type="button" value="Comparte" onclick="cambiarSeccion(4);">
+            <input class="boton" type="button" value="Mis reservas" onclick="cambiarSeccion(6);">
+            <input class="boton" type="button" value="Salir" onclick="cambiarSeccion(7);">
     </section>
 
     <section class="animate__animated seccion ocultar" id="seccion_2">
-          <h1>FORMULARIO RESERVA</h1>
+          <h1> FORMULARIO RESERVA </h1>
 
           <div>
           <label for="nombre">Nombre: </label>
-          <input type="text" name="nombre" id="nombre" placeholder="Daniel Acevedo"> <br>
+          <input class="datosForm" type="text" name="nombre" id="nombre" placeholder="Daniel Acevedo"> <br>
           </div>
 
           <div>
           <label for="id">Id: </label>
-          <input type="text" name="id" id="id" placeholder="123456789"> <br>
+          <input class="datosForm" type="text" name="id" id="id" placeholder="123456789"> <br>
           </div>
 
           <div>
           <label for="fecha">Fecha: </label>
-          <input type="date" name="fecha" id="fecha"> <br>
+          <input class="datosForm" type="date" name="fecha" id="fecha"> <br>
           </div>
 
           <div>
           <label for="hora">Hora: </label>
-          <input type="time" name="hora" id="hora"> <br>
+          <input class="datosForm" type="time" name="hora" id="hora"> <br>
           </div>
 
           <div>
           <label for="barrio">Barrio: </label>
-          <select name="barrio" id="barrio">
+          <select class="datosForm" name="barrio" id="barrio">
             <option value="barrio1">barrio 1</option>
             <option value="barrio2">barrio 2</option>
             <option value="barrio3">barrio 3</option>
@@ -72,7 +72,7 @@
 
           <div>
           <label for="deporte">Deporte: </label>
-          <select name="deporte" id="deporte">
+          <select class="datosForm" name="deporte" id="deporte">
             <option value="deporte1">deporte 1</option>
             <option value="deporte2">deporte 2</option>
             <option value="deporte3">deporte 3</option>
@@ -82,10 +82,10 @@
 
           <div>
           <label for="numjugadores"> Número de jugadores</label>
-          <input type="number" name="numjugadores" id="numjugadores"> <br>
+          <input class="datosForm" type="number" name="numjugadores" id="numjugadores"> <br>
           </div>
 
-          <input type="button" value="Siguiente" onclick="cambiarSeccion(3);">
+          <input class="boton" type="button" value="Siguiente" onclick="cambiarSeccion(3);">
     </section>
 
     <section class="animate__animated seccion ocultar" id="seccion_3">
@@ -93,7 +93,7 @@
           <p> Canchas Disponibles:</p>
           <p>1. ----------</p>
           <p>2. ----------</p>
-          <input type="button" value="Completar" onclick="cambiarSeccion(6);">
+          <input class="boton" type="button" value="Completar" onclick="cambiarSeccion(6);">
     </section>
 
     <section class="animate__animated seccion ocultar" id="seccion_4">
@@ -101,27 +101,27 @@
 
         <div>
           <label for="nombre">Nombre: </label>
-          <input type="text" name="nombre" id="nombre" placeholder="Daniel Acevedo"> <br>
+          <input class="datosForm" type="text" name="nombre" id="nombre" placeholder="Daniel Acevedo"> <br>
           </div>
 
           <div>
           <label for="id">Id: </label>
-          <input type="text" name="id" id="id" placeholder="123456789"> <br>
+          <input class="datosForm" type="text" name="id" id="id" placeholder="123456789"> <br>
           </div>
 
           <div>
           <label for="fecha">Fecha: </label>
-          <input type="date" name="fecha" id="fecha"> <br>
+          <input class="datosForm" type="date" name="fecha" id="fecha"> <br>
           </div>
 
           <div>
           <label for="hora">Hora: </label>
-          <input type="time" name="hora" id="hora"> <br>
+          <input class="datosForm" type="time" name="hora" id="hora"> <br>
           </div>
 
           <div>
           <label for="barrio">Barrio: </label>
-          <select name="barrio" id="barrio">
+          <select class="datosForm" name="barrio" id="barrio">
             <option value="barrio1">barrio 1</option>
             <option value="barrio2">barrio 2</option>
             <option value="barrio3">barrio 3</option>
@@ -131,7 +131,7 @@
 
           <div>
           <label for="deporte">Deporte: </label>
-          <select name="deporte" id="deporte">
+          <select class="datosForm" name="deporte" id="deporte">
             <option value="deporte1">deporte 1</option>
             <option value="deporte2">deporte 2</option>
             <option value="deporte3">deporte 3</option>
@@ -141,9 +141,9 @@
 
           <div>
           <label for="numjugadores"> Número de jugadores</label>
-          <input type="number" name="numjugadores" id="numjugadores"> <br>
+          <input class="datosForm" type="number" name="numjugadores" id="numjugadores"> <br>
           </div>
-           <input type="button" value="Siguiente" onclick="cambiarSeccion(5);">
+           <input class="boton" type="button" value="Siguiente" onclick="cambiarSeccion(5);">
     </section>
 
     <section class="animate__animated seccion ocultar" id="seccion_5">
@@ -153,7 +153,7 @@
           <p>2.______________ ......... 0</p>
           <p>3.______________ ......... 0</p>
           <p>4.______________ ......... 0</p>
-           <input type="button" value="Completar" onclick="cambiarSeccion(6);">
+           <input class="boton" type="button" value="Completar" onclick="cambiarSeccion(6);">
     </section>
 
     <section class="animate__animated seccion ocultar" id="seccion_6">
@@ -164,7 +164,7 @@
           <p>1.______________  00:00</p>
           <p>2.______________  00:00</p>
           <p>3.______________  00:00</p>
-           <input type="button" value="Inicio" onclick="cambiarSeccion(1);">
+           <input class="boton" type="button" value="Inicio" onclick="cambiarSeccion(1);">
     </section>
 
 
