@@ -45,7 +45,7 @@ function reservar(){
   localStorage.setItem('reservas', seleccion.value);
   let listareservas = document.getElementById('listareservas');
   let newreserva = document.createElement('p')
-  newreserva.value = localStorage.getItem('reservas')
+  newreserva.innerHTML = localStorage.getItem('reservas')
   listareservas.appendChild(newreserva)
   cambiarSeccion(6);
 }
