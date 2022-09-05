@@ -83,12 +83,12 @@ body {
   width: 100px;
 }
 
-.datosReserva {
+.datosForm {
   width: 100%;
   background: #24303c;
   padding: 3px;
   border-radius: 4px;
-  border: 1px solid #394C5F;
+  border: 1px solid #1F53C5;
 }
 
 .datosLogin {
@@ -96,7 +96,16 @@ body {
   background: #24303c;
   padding: 3px;
   border-radius: 4px;
-  border: 1px solid #394C5F;
+  border: 1px solid #1F53C5;
+}
+
+.boton {
+  width: 100%;
+  background: #1F53C5;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 4px;
 }
 
 /* SECCION 3 */
