@@ -9,7 +9,7 @@ body {
   height: 500px;
   overflow: hidden;
   margin: 0 auto;
-  border: solid 1px #666666;
+  border: solid 1px #24303c;
 }
 
 /* GENERAL */
@@ -19,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #24303c;
 }
 
 .seccion h1 {
@@ -28,9 +29,9 @@ body {
   text-align: center;
   font-family: Helvetica, sans-serif;
   color: white;
-  color: #66FF66;
+  color: #E5E5E5;
   -webkit-text-stroke: 1px black;
-  background-color: #666666;
+  background-color: #394C5F;
 }
 
 .ocultar {
@@ -55,6 +56,7 @@ body {
 
 /* SECCION 2 */
 #seccion_2 {
+  background: #24303c;
   display: flex;
   flex-direction: column;
 }
