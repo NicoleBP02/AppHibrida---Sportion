@@ -117,10 +117,19 @@ body {
 }
 
 /* SECCION 5 */
-#seccion_5 input {
+#seccion_5 .boton {
   height: 40px;
   width: 50%;
   margin: 10px auto;
+}
+
+#seccion_5 div {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: center;
+  height: 40px;
 }
 
 /* SECCION 6 */
@@ -181,3 +190,5 @@ body {
   border-radius: 4px;
   margin-bottom: 15px;
 }
+
+/*# sourceMappingURL=main.css.map */

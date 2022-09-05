@@ -25,16 +25,16 @@ function login(){
   let usuario = document.getElementById('usuario');
   let password = document.getElementById('password');
 
-  cambiarSeccion(1);
   if (usuario.value == localStorage.getItem('usuario') && password.value == localStorage.getItem('password')){
     console.log("Successful login")
     usuario.value = "";
     password.value = "";
+    cambiarSeccion(1);
   }
   else{
     console.log("Error on login - Wrong username/password")
-    usuario.style.background = "#ff000011"
-    password.style.background = "#ff000011"
+    usuario.style.background = "#ff000022"
+    password.style.background = "#ff000022"
   } 
 }
 

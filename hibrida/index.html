@@ -152,13 +152,12 @@
 <!-- LISTA DE DISPONIBLES -->
     <section class="animate__animated seccion ocultar" id="seccion_5">
           <h1>LISTA CANCHAS DISPONIBLES</h1>
-          <p> Canchas ..................... Cupos</p>
-          <p>1.______________ ........  0</p>
-          <p>2.______________ ......... 0</p>
-          <p>3.______________ ......... 0</p>
-          <p>4.______________ ......... 0</p>
-           <input class="boton" type="button" value="Completar" onclick="cambiarSeccion(6);">
-           <input class="boton" type="button" value="Volver" onclick="cambiarSeccion(4);">
+          <p> Canchas Disponibles:</p>
+          <div><label for="cancha4">Cancha 4 08:30</label><input id="cancha4" type="radio" name="reservar" value="Cancha 4 08:30"></div>
+          <div><label for="cancha5">Cancha 5 13:00</label><input id="cancha5" type="radio" name="reservar" value="Cancha 5 13:00"></div>
+          <div><label for="cancha6">Cancha 6 16:00</label><input id="cancha6" type="radio" name="reservar" value="Cancha 6 16:00"></div>
+          <input class="boton" type="button" value="Completar" onclick="reservar();">
+          <input class="boton" type="button" value="Volver" onclick="cambiarSeccion(2);">
     </section>
 <!-- MIS RESERVAS -->
     <section class="animate__animated seccion ocultar" id="seccion_6">
