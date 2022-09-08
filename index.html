@@ -1,1 +1,180 @@
+<!-- https://codepen.io/xaca/pen/yLNyNyy -->
+<!-- xacarana.com/cursos/html_y_css -->
+<!doctype html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/vendor/animate.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
+  <title>Sportion</title>
+</head>
+
+<body>
+
+  <section id="aplicacion">
+<!-- LOGIN -->
+    <section class="animate__animated seccion" id="seccion_7">
+      <h1>SPORTION</h1>
+      <div>
+        <input class="datosLogin" type="text" name="usuario" id="usuario" placeholder="Usuario"> <br>
+        </div>
+
+        <div>
+        <input class="datosLogin" type="password" name="password" id="password" placeholder="Contraseña"> <br>
+        </div>
+
+        <input class="boton" type="button" value="Entrar" onclick="login()">
+    </section>
+<!-- HOME -->
+    <section class="animate__animated seccion ocultar" id="seccion_1">
+          <h1>SPORTION</h1>
+            <input class="boton" type="button" value="Reserva" onclick="cambiarSeccion(2);">
+            <input class="boton" type="button" value="Comparte" onclick="cambiarSeccion(4);">
+            <input class="boton" type="button" value="Mis reservas" onclick="cambiarSeccion(6);">
+            <input class="boton" type="button" value="Salir" onclick="cambiarSeccion(7);">
+    </section>
+<!-- FORMULARIO DE RESERVA -->
+    <section class="animate__animated seccion ocultar" id="seccion_2">
+          <h1> FORMULARIO RESERVA </h1>
+
+          <div>
+          <label for="nombre">Nombre: </label>
+          <input class="datosForm" type="text" name="nombre" id="nombre" placeholder="Daniel Acevedo"> <br>
+          </div>
+
+          <div>
+          <label for="id">Id: </label>
+          <input class="datosForm" type="text" name="id" id="id" placeholder="123456789"> <br>
+          </div>
+
+          <div>
+          <label for="fecha">Fecha: </label>
+          <input class="datosForm" type="date" name="fecha" id="fecha"> <br>
+          </div>
+
+          <div>
+          <label for="hora">Hora: </label>
+          <input class="datosForm" type="time" name="hora" id="hora"> <br>
+          </div>
+
+          <div>
+          <label for="barrio">Barrio: </label>
+          <select class="datosForm" name="barrio" id="barrio">
+            <option value="barrio1">barrio 1</option>
+            <option value="barrio2">barrio 2</option>
+            <option value="barrio3">barrio 3</option>
+            <option value="barrio4">barrio 4</option>
+          </select> <br>
+          </div>
+
+          <div>
+          <label for="deporte">Deporte: </label>
+          <select class="datosForm" name="deporte" id="deporte">
+            <option value="deporte1">deporte 1</option>
+            <option value="deporte2">deporte 2</option>
+            <option value="deporte3">deporte 3</option>
+            <option value="deporte4">deporte 4</option>
+          </select> <br>
+          </div>
+
+          <div>
+          <label for="numjugadores"> Número de jugadores</label>
+          <input class="datosForm" type="number" name="numjugadores" id="numjugadores"> <br>
+          </div>
+
+          <input class="boton" type="button" value="Siguiente" onclick="cambiarSeccion(3);">
+          <input class="boton" type="button" value="Volver" onclick="cambiarSeccion(1);">
+    </section>
+<!-- SELECCION DE DISPONIBLES -->
+    <section class="animate__animated seccion ocultar" id="seccion_3">
+          <h1>DISPONIBLES</h1>
+          <p> Canchas Disponibles:</p>
+          <div><label for="cancha1">Cancha 1 09:30</label><input id="cancha1" type="radio" name="reservar" value="Cancha 1 09:30"></div>
+          <div><label for="cancha2">Cancha 2 12:00</label><input id="cancha2" type="radio" name="reservar" value="Cancha 2 12:00"></div>
+          <div><label for="cancha3">Cancha 3 17:00</label><input id="cancha3" type="radio" name="reservar" value="Cancha 3 17:00"></div>
+          <input class="boton" type="button" value="Completar" onclick="reservar();">
+          <input class="boton" type="button" value="Volver" onclick="cambiarSeccion(2);">
+    </section>
+<!-- FORMULARIO DE COMPARTE -->
+    <section class="animate__animated seccion ocultar" id="seccion_4">
+        <h1>FORMULARIO COMPARTE</h1>
+
+        <div>
+          <label for="nombre">Nombre: </label>
+          <input class="datosForm" type="text" name="nombre" id="nombre" placeholder="Daniel Acevedo"> <br>
+          </div>
+
+          <div>
+          <label for="id">Id: </label>
+          <input class="datosForm" type="text" name="id" id="id" placeholder="123456789"> <br>
+          </div>
+
+          <div>
+          <label for="fecha">Fecha: </label>
+          <input class="datosForm" type="date" name="fecha" id="fecha"> <br>
+          </div>
+
+          <div>
+          <label for="hora">Hora: </label>
+          <input class="datosForm" type="time" name="hora" id="hora"> <br>
+          </div>
+
+          <div>
+          <label for="barrio">Barrio: </label>
+          <select class="datosForm" name="barrio" id="barrio">
+            <option value="barrio1">barrio 1</option>
+            <option value="barrio2">barrio 2</option>
+            <option value="barrio3">barrio 3</option>
+            <option value="barrio4">barrio 4</option>
+          </select> <br>
+          </div>
+
+          <div>
+          <label for="deporte">Deporte: </label>
+          <select class="datosForm" name="deporte" id="deporte">
+            <option value="deporte1">deporte 1</option>
+            <option value="deporte2">deporte 2</option>
+            <option value="deporte3">deporte 3</option>
+            <option value="deporte4">deporte 4</option>
+          </select> <br>
+          </div>
+
+          <div>
+          <label for="numjugadores"> Número de jugadores</label>
+          <input class="datosForm" type="number" name="numjugadores" id="numjugadores"> <br>
+          </div>
+           <input class="boton" type="button" value="Siguiente" onclick="cambiarSeccion(5);">
+           <input class="boton" type="button" value="Volver" onclick="cambiarSeccion(1);">
+    </section>
+<!-- LISTA DE DISPONIBLES -->
+    <section class="animate__animated seccion ocultar" id="seccion_5">
+          <h1>LISTA CANCHAS DISPONIBLES</h1>
+          <p> Canchas Disponibles:</p>
+          <div><label for="cancha4">Cancha 4 08:30</label><input id="cancha4" type="radio" name="reservar" value="Cancha 4 08:30"></div>
+          <div><label for="cancha5">Cancha 5 13:00</label><input id="cancha5" type="radio" name="reservar" value="Cancha 5 13:00"></div>
+          <div><label for="cancha6">Cancha 6 16:00</label><input id="cancha6" type="radio" name="reservar" value="Cancha 6 16:00"></div>
+          <input class="boton" type="button" value="Completar" onclick="reservar();">
+          <input class="boton" type="button" value="Volver" onclick="cambiarSeccion(2);">
+    </section>
+<!-- MIS RESERVAS -->
+    <section class="animate__animated seccion ocultar" id="seccion_6">
+          <h1>MIS RESERVAS</h1>
+          <p> Lista de reservas </p>
+          <div id="listareservas"></div>
+          <!-- <p>1.______________  00:00</p> -->
+          <!-- <p> HISTORIAL </p>
+          <p>1.______________  00:00</p>
+          <p>2.______________  00:00</p>
+          <p>3.______________  00:00</p> -->
+           <input class="boton" type="button" value="Inicio" onclick="cambiarSeccion(1);">
+    </section>
+
+
+  </section>  
+  
+</body>
+
+</html>
