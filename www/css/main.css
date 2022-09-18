@@ -5,8 +5,8 @@ body {
 
 /* VISTA DE APP */
 #aplicacion {
-  width: 370px;
-  height: 500px;
+  width: 371px;
+  height: 760px;
   overflow: hidden;
   margin: 0 auto;
   border: solid 1px #24303c;
@@ -14,8 +14,8 @@ body {
 
 /* GENERAL */
 .seccion {
-  width: 370px;
-  height: 500px;
+  width: 371px;
+  height: 760px;
   display: flex;
   flex-direction: column;
   align-items: center;
